@@ -1,43 +1,27 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom'
 
 function Nav(props) {
 
 
 
     return (
-        <header className='flex-row px-1'>
+        <div>                
             <h2>
-                <a data-testid='link' href='/'>
+                <a data-testid='link' className='nav-text' href='/'>
                     Matthew White
                 </a>                
             </h2>
-            <nav>
-                <ul className='flex-row'>
-                    <li className='mx-2'>
-                        <a data-testid='about' href='#about'>
-                            About me
-                        </a>
-                    </li>
-                    <li className='mx-2'>
-                        <a data-testid='portfolio' href='#portfolio'>
-                            Portfolio
-                        </a>
-                    </li>
-                    <li className='mx-2'>
-                        <a data-testid='contact' href='#contact'>
-                            Contact
-                        </a>
-                    </li>
-                    <li className='mx-2'>
-                        <a data-testid='resume' href='#resume'>
-                           Resume
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <menu className='main-menu'>
+                <nav className='main-menu_nav'>
+                    <Link to="/about"><span className="nav-text">About me</span></Link>
+                    <Link to="/project"><span className="nav-text">Portfolio</span></Link>
+                    <Link to="/contact"><span className="nav-text">Contact</span></Link>
+                    <Link to="/resume"><span className="nav-text">Resume</span></Link>
+                </nav>
+            </menu>            
+        </div>
 
-        </header>
     )
 
 }
