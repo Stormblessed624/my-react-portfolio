@@ -1,9 +1,10 @@
 import React from "react";
-import resume from "../../assets/images/temp-resume.png";
+import resume from "../../assets/resume/resume.pdf";
 
 
 
 const Resume = () => (
+
   <div>
 
     <p>
