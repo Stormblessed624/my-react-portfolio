@@ -22,7 +22,7 @@ function App() {
           <Route path='/contact' component={ContactForm}/>
           <Route path='/resume' component={Resume}/>
         </Switch>
-        <Footer></Footer>
+        <Footer/>
       </div>    
     </Router>
 
